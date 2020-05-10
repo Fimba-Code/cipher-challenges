@@ -12,7 +12,7 @@ function encrypt(text, alfa_num, steps) {
     if (letter === ' ' || idx < 0) {
       result += letter;
     } else {
-      const step = idx + steps % alfa_num_size;
+      const step = idx + steps;
       if (step >= 0) {
         result += alfa_num[step];
       } else {
